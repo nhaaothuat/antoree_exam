@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import AxiosAPI from '../config/axiosInstance';
 import type { Product } from '../types/Product';
 import { SimpleGrid, Title } from '@mantine/core';
