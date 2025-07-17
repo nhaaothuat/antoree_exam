@@ -13,8 +13,8 @@ const instance = axios.create({
 instance.interceptors.response.use(
   (response) => response,
   (error) => {
-    // Ví dụ: bạn vẫn muốn log hoặc handle status 401
-    console.error('API error:', error);
+   
+    // console.error('API error:', error);
     return Promise.reject(error);
   }
 );

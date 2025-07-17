@@ -18,6 +18,14 @@ const ListProduct = () => {
      const handleSeeProduct = (product: Product) => {
           setSelectedProduct(product);
           setOpened(true);
+          const viewedRaw = localStorage.getItem("viewed");
+          const viewed: Product[] = viewedRaw ? JSON.parse(viewedRaw) : [];
+
+          const exists = viewed.some((p) => p.id === product.id);
+          if (!exists) {
+               const updated = [product, ...viewed].slice(0, 10); // Giữ tối đa 10 sản phẩm gần nhất
+               localStorage.setItem("viewed", JSON.stringify(updated));
+          }
      };
 
      useEffect(() => {
@@ -73,7 +81,7 @@ const ListProduct = () => {
                     </Carousel>
                     <DetailModal product={selectedProduct} opened={opened} onClose={() => setOpened(false)} />
                </div>
-               
+
           </>
      )
 }

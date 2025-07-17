@@ -6,7 +6,7 @@ const Navbar = () => {
                <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">
                          <div className="md:flex md:items-center md:gap-12">
-                              <a className="block text-teal-600" href="#">
+                              <a className="block text-teal-600" href="/">
                                    <span className="sr-only">Home</span>
                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M33.724 36.5809C37.7426 32.5622 40.0003 27.1118 40.0003 21.4286C40.0003 15.7454 37.7426 10.2949 33.724 6.27629C29.7054 2.25765 24.2549 1.02188e-06 18.5717 0C12.8885 -1.02188e-06 7.43807 2.25764 3.41943 6.27628L10.4905 13.3473C11.6063 14.4631 13.4081 14.4074 14.8276 13.7181C15.9836 13.1568 17.2622 12.8571 18.5717 12.8571C20.845 12.8571 23.0252 13.7602 24.6326 15.3677C26.2401 16.9751 27.1431 19.1553 27.1431 21.4286C27.1431 22.7381 26.8435 24.0167 26.2822 25.1727C25.5929 26.5922 25.5372 28.394 26.6529 29.5098L33.724 36.5809Z" fill="#297AFF"></path>
@@ -20,7 +20,7 @@ const Navbar = () => {
                               <nav aria-label="Global">
                                    <ul className="flex items-center gap-6 text-sm">
                                         <li>
-                                             <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
+                                             <a className="text-gray-500 transition hover:text-gray-500/75" href="/"> Home </a>
                                         </li>
 
                                         <li>
@@ -33,7 +33,7 @@ const Navbar = () => {
 
 
                                         <li>
-                                             <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+                                             <a className="text-gray-500 transition hover:text-gray-500/75" href="/search"> Find </a>
                                         </li>
                                    </ul>
                               </nav>

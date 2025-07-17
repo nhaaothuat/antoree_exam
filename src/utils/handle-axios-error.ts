@@ -4,13 +4,13 @@ import axios from "axios";
 
 const handleAxiosError = <T>(error: unknown): CustomAxiosResponse<T> => {
  
-  console.error("❌ Axios Error:", error);
+  // console.error("❌ Axios Error:", error);
   if (axios.isAxiosError(error)) {
-    console.error(
-      "❌ Axios Error:",
-      error.response?.status,
-      error.response?.data
-    );
+    // console.error(
+    //   "❌ Axios Error:",
+    //   error.response?.status,
+    //   error.response?.data
+    // );
     
     return {
       data: error.response?.data || null,
