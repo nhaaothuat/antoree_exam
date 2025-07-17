@@ -34,7 +34,7 @@ const ProductCard = ({ id, name, price, image, description, isLike, onSee }: Pro
           }
      };
      return (
-          <Card shadow="sm" padding="lg" radius="md" withBorder style={{ height: 360, width: 310, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <Card shadow="sm" padding="lg" radius="md" withBorder style={{ height: 360, minWidth: 250, width: 310, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                <Card.Section>
                     <Image
                          src={image}
@@ -78,8 +78,10 @@ const ProductCard = ({ id, name, price, image, description, isLike, onSee }: Pro
 
                     </div>
 
-                    <Button radius="md" onClick={() => { console.log("Đã click See:", { id, name, price, description }); 
-               onSee?.({ id, name, price, image, description, isLike })}}>See</Button>
+                    <Button radius="md" onClick={() => {
+                         console.log("Đã click See:", { id, name, price, description });
+                         onSee?.({ id, name, price, image, description, isLike })
+                    }}>See</Button>
                </Group>
 
           </Card>

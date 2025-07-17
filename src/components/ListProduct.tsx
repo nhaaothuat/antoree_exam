@@ -47,7 +47,7 @@ const ListProduct = () => {
                          variant="gradient"
                          gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
                     >
-                         Gradient Text
+                        Featured Courses
                     </Text>
                </Center>
                <Space h="md" />

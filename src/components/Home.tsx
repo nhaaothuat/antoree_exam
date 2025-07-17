@@ -8,16 +8,17 @@ import SuggestionAssistant from "./SuggestionAssistant";
 import { useState } from "react";
 import CTA from "./CTA";
 import FAQ from "./FAQ";
+import Sections from "./Sections";
 
 const Home = () => {
 
   const [opened, setOpened] = useState(false);
- 
 
-  
+
+
 
   const handleOpen = () => {
-   
+
     setOpened(true);
   };
 
@@ -25,25 +26,28 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <ListProduct />
-       <Divider my="lg" />
+
+      <Divider my="lg" variant="none" />
+      <Sections />
+      <Divider my="lg" variant="none" />
       <FAQ />
-      <Divider my="lg" />
+      <Divider my="lg" variant="none" />
+      <ListProduct />
       <CTA />
-      <Divider my="lg" />
+      <Divider my="lg" variant="none" />
       <Modal opened={opened}
         onClose={handleClose}
         withCloseButton={true}
         size="md"
         overlayProps={{
-          backgroundOpacity: 0, 
+          backgroundOpacity: 0,
           blur: 0,
         }}
         centered={false}
         styles={{
           content: {
             position: "fixed",
-            bottom: "80px", 
+            bottom: "80px",
             right: "20px",
             margin: 0,
             width: "300px",
