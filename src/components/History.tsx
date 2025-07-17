@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import AxiosAPI from '../config/axiosInstance';
 import type { Product } from '../types/Product';
-import { Center, Container, SimpleGrid, Title } from '@mantine/core';
+import { Center, SimpleGrid, Title } from '@mantine/core';
 import ProductCard from './ProductCard';
 import DetailModal from './DetailModal';
 
